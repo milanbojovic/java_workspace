@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mail Spamer</title>
+</head>
+<body>
+	<h1>Spam page:</h1>
+	<div id="contact_form">
+
+		<p>Ovo je stranica koja sluzi za slanje spam mailova:</p>
+		<h3>Mozete poslati mail samo kolegi Nenadu Nikolovskom</h3>
+
+		<form method="post" name="contact" action="SendMailServlet">
+
+			<table>
+				<tr>
+					<td><label for="email">Email:</label></td>
+					<td><input type="text" id="email" name="email"
+						class="validate-email required input_field"
+						value="nenad.nikolovski@db.com" disabled /></td>
+				</tr>
+				<tr>
+					<td><label for="subject">Naslov:</label></td>
+					<td><input type="text" id="subject" name="subject"
+						class="validate-email required input_field" /></td>
+				</tr>
+				<tr>
+					<td><label for="text">Poruka:</label></td>
+					<td><textarea id="text" name="content" rows="0" cols="0"
+							class="required"></textarea></td>
+				</tr>
+				<tr>
+					<td><label for="text">Broj poruka:</label></td>
+					<td><textarea id="text" name="mailCount" rows="0" cols="0"
+							class="required"></textarea></td>
+				</tr>
+				<tr>
+					<td><input type="submit" class="submit_btn" name="submit"
+						id="submit" value="Pošalji" /></td>
+					<td><input type="reset" class="submit_btn" name="reset"
+						id="reset" value="Poništi" /></td>
+				</tr>
+
+			</table>
+
+
+		</form>
+</body>
+</html>
